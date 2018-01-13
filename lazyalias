@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+figlet -c "Welcome dev-harsh1998"
+alias gst='git status';
+alias gpul='git pull';
+alias gf='git fetch';
+alias grem='git remote';
+alias gremv='git remote -v';
+alias gpu='git push';
+alias gpf='gpu -f'
+alias grev='git revert';
+alias gcp='git cherry-pick';
+alias gcpc='gcp --continue';
+alias gcpa='gcp --abort';
+alias gr='git reset';
+alias grh='gr --hard';
+alias grb='git rebase';
+alias grbc='grb --continue';
+alias grba='grb --abort';
+alias gc='git commit';
+alias rs='repo sync -j25 --force-sync -c --no-clone-bundle --no-tags --optimized-fetch --prune';
+echo "Github Alias Initialised!"
