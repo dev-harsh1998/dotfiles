@@ -98,7 +98,7 @@ public class RecordingSorter {
 
     private static void createDataStore(HashMap<String, CallFrequency> recordingFileNamesFreqency,
             String folderPathOut) {
-        File folder = new File("/home/harsh/Documents/code/data/output");
+        File folder = new File(folderPathOut);
         folder.mkdirs();
         for (String key : recordingFileNamesFreqency.keySet()) {
             String name = recordingFileNamesFreqency.get(key).name;
@@ -113,7 +113,7 @@ public class RecordingSorter {
                 String month = recordingDate.substring(2, 4);
                 String date = recordingDate.substring(4, 6);
                 String hour = recordingTime.substring(0, 2);
-                String newFolderPath = "/home/harsh/Documents/code/data/output/" + name + "/" + year + "/" + month + "/"
+                String newFolderPath = folderPathOut + "/" + name + "/" + year + "/" + month + "/"
                         + date + "/" + hour;
                 File newFolder = new File(newFolderPath);
                 newFolder.mkdirs();
